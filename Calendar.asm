@@ -13,7 +13,7 @@ INCLUDE Irvine32.inc
 	day_of_week DB "T2 T3 T4 T5 T6 T7 CN", 0
 
 	ngay_1	DW	1											; ngay dau tien cua thang
-	thang_1 DB	4											; <----------------Chinh sua thang o day 
+	thang_1 DB	2											; <----------------Chinh sua thang o day 
 	a		DW ?
 	b		DW ?
 
@@ -33,11 +33,8 @@ INCLUDE Irvine32.inc
 .code
 namnhuan PROC												; Ham xet nam nhuan, neu la nam nhuan, bl = 1 va nguoc lai
 	mov nam1, bx
-														
 	xor eax, eax											; xoa eax
-		
 	mov ax, nam1											; chuyen bien vao thanh ghi ax de su dung phep chia
-
 	mov bx, 400												; so bi chia la 400
 	xor dx, dx												; xoa dx ( vi phep chia bx su dung dx:ax)
 	div bx									
