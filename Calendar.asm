@@ -119,7 +119,7 @@ main PROC
 	mov cx, 4800
 	add cx, nam_1
 	sub cx, a
-	mov b, cx												; b = year + 4800 - a
+	mov b, 4800 + nam_1 - a												; b = year + 4800 - a
 	
 	mov bx, 365
 	mov ax, b

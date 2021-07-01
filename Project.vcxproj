@@ -11,7 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="Calendar.asm" />
+    <None Include="Irvine32.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Irvine32.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="daochuoi.asm" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4164AA65-1EF9-4E69-899B-D1BED776070B}</ProjectGuid>
@@ -74,7 +80,7 @@
     </Link>
     <MASM>
       <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-      <IncludePaths>c:\Irvine</IncludePaths>
+      <IncludePaths>.</IncludePaths>
       <UseSafeExceptionHandlers>false</UseSafeExceptionHandlers>
     </MASM>
   </ItemDefinitionGroup>
